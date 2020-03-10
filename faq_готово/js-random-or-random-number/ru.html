@@ -1,0 +1,59 @@
+
+{{title: JS случайное или рандомное число}}
+{{h1: ~ }}
+{{meta: Случайное числа в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Чтобы найти рандомное число в JavaScript, 
+		используйте функцию <a href="/ru/javascript/manual/math/Math.random">Math.random</a>.
+		Она возвращает случайное дробное число от 0 до 1. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(Math.random());
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			0.765557653267769
+		<-javascript->
+	<-show->
+	<p>
+		Чтобы найти случайное целое число в заданном диапазоне,
+		используйте следующую функцию:
+	</p>
+	<~show~>
+		<+javascript+>
+			function getRandomInt(min, max)
+			{
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+		<-javascript->
+	<-show->
+	<p>
+		Давайте с ее помощью найдем случайное целое число от 10 до 100:
+	</p>
+	<~show~>
+		<+javascript+>
+			function getRandomInt(min, max)
+			{
+				return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+			
+			console.log(getRandomInt(10, 100));
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-round-number/">статью</a>, <br>
+			в которой рассказывается про <b>округление</b> числа.
+		</li>
+	</ul>
+</div>
+

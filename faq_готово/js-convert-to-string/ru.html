@@ -1,0 +1,32 @@
+
+{{title: JS преобразовать в строку}}
+{{h1: ~ }}
+{{meta: Метод join объединяет элементы массива в строку. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		В JavaScript при помощи функции
+		<a href="/ru/javascript/manual/lang/String/">String</a>
+		можно привести различные типы данных к строке.
+		Давайте попробуем на следующем примере:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(String(12));            // '12'
+			console.log(String(null));          // 'null'
+			console.log(String(NaN));           // 'NaN'
+			console.log(String(undefined));     // 'undefined'
+			console.log(String([2, 1, false])); // '2,1,false'
+			console.log(String(false));         // 'false'
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/intro/string-characters/">урок</a>, <br>
+			в котором рассказывается про работу с символами строки.
+		</li>
+	</ul>
+</div>
+

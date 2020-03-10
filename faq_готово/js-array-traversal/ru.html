@@ -1,0 +1,95 @@
+
+{{title: JS обход массива}}
+{{h1: ~ }}
+{{meta: Примеры перебора массива в JS. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Цикл for</h2>
+	<p>
+		В JavaScript обойти элементы массива можно при помощи цикла
+		<a href="/ru/javascript/book/prime/loops/array-for/">for</a>.
+		Пусть у нас дан такой массив:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [1, 2, 3, 4, 5];
+		<-javascript->
+	<-show->
+	<p>
+		Давайте переберём элементы массива при помощи цикла for:
+	</p>
+	<~show~>
+		<+javascript+>
+			for (let i = 0; i < arr.length; i++) {
+				console.log(arr[i]);
+			}
+		<-javascript->
+	<-show->
+	<p>
+		Результат работы кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			12345
+		<-javascript->
+	<-show->
+	
+	<h2>Цикл for-of</h2>
+	<p>
+		У цикла <a href="/ru/javascript/book/prime/loops/array-for/">for</a>
+		в JavaScript есть и другая запись, это цикл
+		<a href="/ru/javascript/book/prime/loops/for-of/">for-of</a>.
+		Давайте переберём массив при помощи цикла
+		<a href="/ru/javascript/book/prime/loops/for-of/">for-of</a>:
+	</p>
+	<~show~>
+		<+javascript+>
+			for (const elem of arr) {
+				console.log(elem);
+			}
+		<-javascript->
+	<-show->
+	<p>
+		Результат работы кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			12345
+		<-javascript->
+	<-show->
+	
+	<h2>Метод forEach</h2>
+	<p>
+		В ES5 появились новые методы для работы с массивами, одним
+		из которых является <a href="/ru/javascript/manual/array/forEach/">forEach</a>
+		для перебора элементов массива. В качестве аргумента
+		<a href="/ru/javascript/manual/array/forEach/">forEach</a>
+		принимает функцию, которая приминяется в каждому элементу
+		массива. Также, эта функция принимает аргументом каждый
+		элемент массива по очереди:
+	</p>
+	<~show~>
+		<+javascript+>
+			arr.forEach((elem) => {
+				console.log(elem);
+			});
+		<-javascript->
+	<-show->
+	<p>
+		Результат работы кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			12345
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-array-sorting/">статью</a>, <br>
+			в которой рассказывается про сортировку массива.
+		</li>
+	</ul>
+</div>
+

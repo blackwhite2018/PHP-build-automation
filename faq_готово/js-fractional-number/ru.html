@@ -1,0 +1,39 @@
+
+{{title: JS дробное число}}
+{{h1: ~ }}
+{{meta: Дробные числа в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		JavaScript поддерживает так называется 'дробные числа', они же
+		числа с 'плавающей запятой'. Зададим дробное число:
+	</p>
+	<~show~>
+		<+javascript+>
+			let num = 5.2;
+			console.log(num); // выведет 5.2
+		<-javascript->
+	<-show->
+	<p>
+		В JavaScript также есть функция parseFloat, которая преобразует
+		строку к числу с плавающей запятой:
+	</p>
+	<~show~>
+		<+javascript+>
+			let str = '5.2';
+			let float = parseFloat(str);
+			
+			console.log(typeof float, float); // выведет number 5.2
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/intro/increment-decrement/">урок</a>, <br>
+			в котором рассказывается про операции инкремента и декремента
+			при работе с числами.
+		</li>
+	</ul>
+</div>
+

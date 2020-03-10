@@ -1,0 +1,38 @@
+
+{{title: JS проверка на массив}}
+{{h1: ~ }}
+{{meta: Проверка на массив в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Оператор instanceof</h2>
+	<p>
+		Оператор <b>instanceof</b> позволяет проверить, какому
+		классу принадлежит объект, с учетом прототипного
+		наследования. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log([] instanceof Array); // выведет true
+		<-javascript->
+	<-show->
+	
+	<h2>Метод Array.isArray</h2>
+	<p>
+		Метод <b>Array.isArray</b> возвращает true, если объект
+		является массивом, иначе false. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(Array.isArray([]));   // выведет true
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/collections/data-types/">урок</a>, <br>
+			в которой рассказывается про примитивы и объекты.
+		</li>
+	</ul>
+</div>
+

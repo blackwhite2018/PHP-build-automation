@@ -1,0 +1,32 @@
+
+{{title: JS дата и время}}
+{{h1: ~ }}
+{{meta: Давайте выведем с помощью JavaScrip дату и время. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Давайте выведем с помощью JavaScript
+		<a href="/ru/javascript/book/prime/time/object-Date/">дату и время</a>:
+	</p>
+	<~show~>
+		<+javascript+>
+			let date = new Date();
+			
+			console.log(date.getDate());     // день
+			console.log(date.getMonth());    // месяц (начинается с 0)
+			console.log(date.getFullYear()); // год
+			console.log(date.getSeconds());  // секунды
+			console.log(date.getMinutes());  // минуты
+			console.log(date.getHours());    // часы
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/time/object-Date/">урок</a>, <br>
+			в котором рассказывается про работу с объектом <b>Date</b>.
+		</li>
+	</ul>
+</div>
+

@@ -1,0 +1,40 @@
+
+{{title: Разница дат JS}}
+{{h1: ~ }}
+{{meta: Разница между датами в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Даты, представленные в виде объекта
+		<a href="/ru/javascript/book/prime/time/object-Date/">Date</a>,
+		можно вычитать друг из друга, результат
+		их вычитания – разница в миллисекундах.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let now = new Date();
+			let date = new Date(2015, 23, 4, 12, 59, 59);
+			let diff = now - date;
+			
+			console.log(diff);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			6892970177
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-get-date/">статью</a>, <br>
+			в которой рассказываются основы работы с датами.
+		</li>
+	</ul>
+</div>
+

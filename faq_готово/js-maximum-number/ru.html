@@ -1,0 +1,79 @@
+
+{{title: JS максимальное число}}
+{{h1: ~ }}
+{{meta: Чтобы найти максимальное число в JavaScript используйте Math.max. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Поиск максимального числа</h2>
+	<p>
+		Чтобы найти максимальное число в JavaScript используйте
+		<a href="/ru/javascript/manual/math/Math.max/">Math.max</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(Math.max(10, 45, 50, 344, 30));
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			344
+		<-javascript->
+	<-show->
+	
+	<h2>Максимальный элемент в массиве через apply</h2>
+	<p>
+		Хитрым путем можно найти максимальное значение массива, используя
+		<a href="/ru/javascript/manual/math/Math.max/">Math.max</a>
+		в связке с методом <a href="/ru/javascript/manual/context/apply/">apply</a>:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [10, 45, 50, 344, 30];
+			console.log(Math.max.apply(null, arr));
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			344
+		<-javascript->
+	<-show->
+	
+	<h2>Максимальный элемент в массиве через spread</h2>
+	<p>
+		Использование метода <a href="/ru/javascript/manual/context/apply/">apply</a>
+		для нахождения минимального элемента в массиве
+		считается устаревшим с появлением оператора
+		<a href="/ru/javascript/book/prime/ellipsis/spread/">
+		spread</a>. Давайте посмотрим пример: 
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [10, 45, 50, 344, 30];
+			console.log(Math.max(...arr));
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			344
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/faq/js-is-minimum-number/">урок</a>, <br>
+			в котором рассказывается про нахождение минимального числа.
+		</li>
+	</ul>
+</div>
+

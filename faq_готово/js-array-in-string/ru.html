@@ -1,0 +1,39 @@
+
+{{title: JS массив в строку}}
+{{h1: ~ }}
+{{meta: Метод join объединяет элементы массива в строку. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Для перевода массива в строку используйте метод
+		<a href="/ru/javascript/manual/array/join/">join</a>.
+		Он объединяет элементы массива с указанным
+		разделителем. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = ['a', 'b', 'c'];
+			let str = arr.join('-');
+			
+			console.log(str);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			'a-b-c'
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/manual/string/split/">урок</a>, <br>
+			в котором рассказывается про объединение элементов строки в
+			массив.
+		</li>
+	</ul>
+</div>
+

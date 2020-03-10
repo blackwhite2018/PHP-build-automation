@@ -1,0 +1,37 @@
+
+{{title: JS разбить строку на массив}}
+{{h1: ~ }}
+{{meta: Для того, чтобы разбить строку в массив, используйте метод split. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Для того, чтобы разбить строку в массив, используйте метод
+		<a href="/ru/javascript/manual/string/split/">split</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let str = 'a-b-c-d-e';
+			let arr = str.split('-');
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			['a', 'b', 'c', 'd', 'e']
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/collections/arrays/">урок</a>, <br>
+			в котором рассказывается про работу с <b>массивами</b>.
+		</li>
+	</ul>
+</div>
+

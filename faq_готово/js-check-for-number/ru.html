@@ -1,0 +1,35 @@
+
+{{title: JS проверить на число}}
+{{h1: ~ }}
+{{meta: Проверка числа в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Часто бывают случаи, что нужно проверить,является
+		ли переменная числом. Давайте реализуем функцию 
+		<b>isNumber</b>, которая и будет это проверять:
+	</p>
+	<~show~>
+		<+javascript+>
+			const isNumber = num => {
+				return typeof num === 'number' && !isNaN(num);
+			};
+			
+			console.log(isNumber(1));    // выведет true
+			console.log(isNumber(-2.3)); // выведет true
+			console.log(isNumber(NaN));  // выведет false
+			console.log(isNumber('a'));  // выведет false
+			console.log(isNumber('4'));  // выведет false
+			console.log(isNumber(true)); // выведет false
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-conversion-to-number/">статью</a>, <br>
+			в которой рассказывается про преобразование строки в число.
+		</li>
+	</ul>
+</div>
+

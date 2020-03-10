@@ -1,0 +1,81 @@
+
+{{title: JS сумма массива}}
+{{h1: ~ }}
+{{meta: Получения суммы элементов массива. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Давайте напишем функцию, которая параметром будет принимать
+		массив и возвращать сумму его элементов. Для этого создадим
+		функцию <b>getSumElems</b>:
+	</p>
+	<~show~>
+		<+javascript+>
+			const getSumElems = (arr) => {};       // создаем стрелочную функцию getSumElems
+		<-javascript->
+	<-show->
+	<p>
+		Следующим шагом воспользуемся методом <a href="/ru/javascript/manual/array/reduce/">reduce</a>,
+		который сворачивает массив к одному значению:
+	</p>
+	<~show~>
+		<+javascript+>
+			const getSumElems = (arr) => {
+				return arr.reduce((sum, elem) => { // перебираем массив при помощи метода reduce
+					sum = sum + elem;              // в промежуточную переменную sum прибавляем значение элемента
+					return sum;                    // возвращаем промежуточное значение sum
+				}, 0);
+			};
+			
+			let arr = [2, 1, 3, 4];
+			console.log(getSumElems(arr));
+		<-javascript->
+	<-show->
+	<p>
+		Результат работы кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			10
+		<-javascript->
+	<-show->
+	<p>
+		Метод reduce проходит по всем элементам массива, а также
+		в качестве аргумента получает функцию. В нашем случае 
+		используется <a href="/ru/javascript/book/prime/functions/arrow-functions/">стрелочная функция</a>.
+	</p>
+	<p>
+		Эта функция получает 2 параметра: промежуточную переменную,
+		в которую можно записывать значения и элемент массива.
+		Следующим шагом мы в промежуточную переменную
+		<b>sum</b> прибавляем значение элемента и
+		возвращаем значение переменной <b>sum</b>.
+	</p>
+	<p>
+		Если вы не умеете пользоваться методом <a href="/ru/javascript/manual/array/reduce/">reduce</a>
+		или не знаете, что означает запись <a href="/ru/javascript/book/prime/functions/arrow-functions/">'(arr) =>'</a>,
+		тогда изучите возможности ES5/6 по соответствующим ссылкам.
+	</p>
+	<p>
+		Наша функция работает, но её также можно и улучшить.
+		Если вспомнить каким образом работают стрелочные
+		функции, у нас получается:
+	</p>
+	<~show~>
+		<+javascript+>
+			const getSumElems = (arr) => arr.reduce((sum, elem) => sum + elem);
+			
+			let arr = [2, 1, 3, 4];
+			console.log(getSumElems(arr));
+		<-javascript->
+	<-show->
+	<p>
+		Результат работы кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			10
+		<-javascript->
+	<-show->
+</div>
+

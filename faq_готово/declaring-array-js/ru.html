@@ -1,0 +1,41 @@
+
+{{title: Объявление массива JS}}
+{{h1: ~ }}
+{{meta: Массивы в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Массивы</h2>
+	<p>
+		В JavaScript <a href="/ru/javascript/book/prime/collections/arrays/">массивы</a>
+		создается при помощи квадратных скобок или ключевого слова new Array:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr1 = ['a', 'b', 'c', 'd', 'e'];
+			let arr2 = new Array(1, 2, 3);
+		<-javascript->
+	<-show->
+	<p>
+		Оба массива практически идентичны. К элементам этих массив можно
+		обращаться по ключу. То есть, первый элемент массива имеет ключ
+		<b>0</b>, второй <b>1</b> и так далее. Смотрите пример:
+	</p>
+	<p>
+		Давайте выведем 'c':
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = ['a', 'b', 'c', 'd', 'e'];
+			console.log(arr[2]); // выведет 'c'
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-sorting/">статью</a>, <br>
+			в которой рассказывается про сортировку массивов.
+		</li>
+	</ul>
+</div>
+

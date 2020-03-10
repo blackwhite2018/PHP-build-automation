@@ -1,0 +1,49 @@
+
+{{title: JS сегодняшняя текущая дата}}
+{{h1: ~ }}
+{{meta: Как вывести сегодняшнюю текущую дату. Нажмите, чтобы посмотреть подробности.}}
+
+<div class="content">
+	<p>
+		Для работы с датой в JavaScript есть объект
+		<a href="/ru/javascript/book/prime/time/object-Date/">Date</a>.
+		Давайте создадим его:
+	</p>
+	<~show~>
+		<+javascript+>
+			let date = new Date();
+		<-javascript->
+	<-show->
+	<p>
+		Используя методы объекта Date выведем дату в
+		формате 'день.месяц.год':
+	</p>
+	<~show~>
+		<+javascript+>
+			let result = `${date.getDate()}.${date.getMonth()}.${date.getFullYear()}`;
+			console.log(result);
+		<-javascript->
+	<-show->
+	<p>
+		Учтите, что <b>месяц</b>, который возвращает функция <b>getMonth</b>,
+		начинается с нуля - январь нулевой, февраль первый и так далее.
+	</p>
+	<p>
+		Исправим это:
+	</p>
+	<~show~>
+		<+javascript+>
+			let result = `${date.getDate()}.${date.getMonth() + 1}.${date.getFullYear()}`;
+			console.log(result);
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-date-and-time/">статью</a>, <br>
+			в которой рассказывается как получить текущие дату и время.
+		</li>
+	</ul>
+</div>
+

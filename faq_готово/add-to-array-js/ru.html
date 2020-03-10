@@ -1,0 +1,92 @@
+
+{{title: Добавить в массив js}}
+{{h1: ~ }}
+{{meta: Заполнение массива в JS. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Просто способ заполнения массива</h2>
+	<p>
+		Массив можно заполнять не на этапе его создания, а потом. В следующем
+		примере вначале объявлена переменная arr - массив, а потом
+		заполнение его данными. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [];
+			arr[0] = 1;
+			arr[1] = 2;
+			arr[2] = 3;
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			[1, 2, 3]
+		<-javascript->
+	<-show->
+	
+	<h2>Добавление с использованием метода push</h2>
+	<p>
+		Метод <a href="/ru/javascript/manual/array/push/">push</a> добавляет
+		неограниченное количество элементов в конец массива. Элементы
+		передаются параметром метода. Метод изменяет исходный
+		массив - возвращает новую длину массива. Смотрите
+		пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = ['a', 'b', 'c'];
+			arr.push('d', 'e');
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			['a', 'b', 'c', 'd', 'e']
+		<-javascript->
+	<-show->
+	
+	<h2>Добавление с использованием метода unshift</h2>
+	<p>
+		Метод <a href="/ru/javascript/manual/array/unshift/">unshift</a> добавляет
+		любое количество новых элементов в начало массива. Метод изменяет исходный
+		массив - возвращает новую длину массива. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = ['c', 'd', 'e'];
+			arr.unshift('a', 'b');
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			['a', 'b', 'c', 'd', 'e']
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			урок <br>
+			<a href="/ru/javascript/book/prime/collections/arrays/">работа с массивами в JavaScript</a>
+		</li>
+		<li>
+			урок <br>
+			<a href="/ru/javascript/book/prime/multidimensionality/multi-arrays/">многомерные массивы в JavaScript</a>
+		</li>
+	</ul>
+</div>
+

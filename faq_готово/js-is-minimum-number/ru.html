@@ -1,0 +1,79 @@
+
+{{title: JS минимальное число}}
+{{h1: ~ }}
+{{meta: Чтобы найти минимальное число в JavaScript используйте Math.min. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Поиск минимального числа</h2>
+	<p>
+		Чтобы найти минимальное число в JavaScript используйте
+		<a href="/ru/javascript/manual/math/Math.min/">Math.min</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(Math.min(10, 45, 50, 344, 30));
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			10
+		<-javascript->
+	<-show->
+	
+	<h2>Минимальный элемент в массиве через apply</h2>
+	<p>
+		Хитрым путем можно найти минимальное значение массива, используя
+		<a href="/ru/javascript/manual/math/Math.min/">Math.min</a>
+		в связке с методом <a href="/ru/javascript/manual/context/apply/">apply</a>:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [10, 45, 50, 344, 30];
+			console.log(Math.min.apply(null, arr));
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			10
+		<-javascript->
+	<-show->
+	
+	<h2>Минимальный элемент в массиве через spread</h2>
+	<p>
+		Использование метода <a href="/ru/javascript/manual/context/apply/">apply</a>
+		для нахождения минимального элемента в массиве
+		считается устаревшим с появлением оператора
+		<a href="/ru/javascript/book/prime/ellipsis/spread/">
+		spread</a>. Давайте посмотрим пример: 
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [10, 45, 50, 344, 30];
+			console.log(Math.min(...arr));
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			10
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/faq/js-maximum-number/">урок</a>, <br>
+			в котором рассказывается про нахождение максимального числа.
+		</li>
+	</ul>
+</div>
+

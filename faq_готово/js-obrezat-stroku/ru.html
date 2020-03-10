@@ -1,0 +1,89 @@
+
+{{title: JS обрезать строку}}
+{{h1: ~ }}
+{{meta: JavaScript обрезать строку до определенного символа. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Вырезание подстроки из строки</h2>
+	<p>
+		Давайте зададим строку str и посмотрим как можно обрезать
+		строку до определенного символа:
+	</p>
+	<~show~>
+		<+javascript+>
+			let str = 'abcde'; // будем работать с этой строкой
+		<-javascript->
+	<-show->
+	
+	<h2>Метод substr</h2>
+	<p>
+		Для получения части подстроки до определенного символа
+		можно использовать метод
+		<a href="/ru/javascript/manual/string/substr/">substr</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(str.substr(0, 2))
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			ab
+		<-javascript->
+	<-show->
+	
+	<h2>Метод substring</h2>
+	<p>
+		Для получения части подстроки до определенного символа
+		можно использовать метод
+		<a href="/ru/javascript/manual/string/substring/">substring</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(str.substring(0, 2))
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			ab
+		<-javascript->
+	<-show->
+	
+	<h2>Метод slice</h2>
+	<p>
+		Для получения части подстроки до определенного символа
+		можно использовать метод
+		<a href="/ru/javascript/manual/string/slice/">slice</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			console.log(str.slice(0, 2))
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			ab
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/inbuilt/string/">урок</a>, <br>
+			в котором рассказывается про методы и функции для работы со строками.
+		</li>
+	</ul>
+</div>
+

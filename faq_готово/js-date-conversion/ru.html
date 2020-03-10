@@ -1,0 +1,57 @@
+
+{{title: JS преобразование даты}}
+{{h1: ~ }}
+{{meta: Преобразование к числу, разность дат в JavaScript. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Преобразование даты к числу</h2>
+	<p>
+		При помощи функции Number или знака '+' можно преобразовать
+		объект <a href="">Date</a> в число, количество миллисекунд,
+		прошедшее с 1 января 1970:
+	</p>
+	<~show~>
+		<+javascript+>
+			const date = new Date();
+			
+			console.log(+date);        // выведит 1583437957606
+			console.log(Number(date)); // выведит 1583437957606
+		<-javascript->
+	<-show->
+	
+	<h2>Разница между датами</h2>
+	<p>
+		Даты, представленные в виде объекта
+		<a href="/ru/javascript/book/prime/time/object-Date/">Date</a>,
+		можно вычитать друг из друга, результат
+		их вычитания – разница в миллисекундах.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let now = new Date();
+			let date = new Date(2015, 23, 4, 12, 59, 59);
+			let diff = now - date;
+			
+			console.log(diff);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			6892970177
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			эту <a href="/ru/javascript/faq/js-date-ащкьфе/">статью</a>, <br>
+			в которой рассказывается для чего используется метод
+			<b>Date.parse</b>.
+		</li>
+	</ul>
+</div>
+

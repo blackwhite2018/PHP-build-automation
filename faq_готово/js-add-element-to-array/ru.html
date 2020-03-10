@@ -1,0 +1,88 @@
+
+{{title: JS добавить элемент в массив}}
+{{h1: ~ }}
+{{meta: Заполнение массива в JS. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<h2>Добавить элемент массива через квадратные скобки</h2>
+	<p>
+		В любой <a href="/ru/javascript/book/prime/collections/arrays/">массив</a>
+		можно добавлять элементы с новым ключом. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = [];
+			arr[0] = 'a';
+			arr[1] = 'b';
+			arr[2] = 'c';
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			['a', 'b', 'c']
+		<-javascript->
+	<-show->
+	
+	<h2>Метод push</h2>
+	<p>
+		Метод <a href="/ru/javascript/manual/array/push/">push</a>
+		добавляет неограниченное количество элементов в конец
+		массива. Элементы передаются параметром метода. Метод
+		изменяет исходный массив, возвращает новую длину
+		массива. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = ['a', 'b', 'c'];
+			arr.push('d', 'e');
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			['a', 'b', 'c', 'd', 'e']
+		<-javascript->
+	<-show->
+	
+	<h2>Метода unshift</h2>
+	<p>
+		Метод <a href="/ru/javascript/manual/array/unshift/">unshift</a>
+		добавляет любое количество новых элементов в начало массива.
+		Метод изменяет исходный массив и возвращает новую длину
+		массива. Смотрите пример:
+	</p>
+	<~show~>
+		<+javascript+>
+			let arr = ['c', 'd', 'e'];
+			arr.unshift('a', 'b');
+			
+			console.log(arr);
+		<-javascript->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+javascript+>
+			['a', 'b', 'c', 'd', 'e']
+		<-javascript->
+	<-show->
+	
+	<h2>Смотрите также</h2>
+	<ul class="ref">
+		<li>
+			этот <a href="/ru/javascript/book/prime/collections/arrays/">урок</a>, <br>
+			в котором рассказывается про работу с массивами.
+		</li>
+	</ul>
+</div>
+
