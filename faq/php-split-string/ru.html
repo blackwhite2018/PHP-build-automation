@@ -1,0 +1,29 @@
+
+{{title: PHP разделить строку}}
+{{h1: ~ }}
+{{meta: В PHP есть специальная функция которая разбивает строку. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		В PHP есть специальная функция которая		разбивает строку <a href="/ru/php/manual/string/explode/">explode</a>. Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$str = 'php html css';
+				$a = explode(' ', $str);
+				echo $a[0];
+				echo $a[1];
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<div class="result">
+			php<br>
+			html<br>		</div>
+	<-show->
+</div>
+

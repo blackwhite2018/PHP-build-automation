@@ -1,0 +1,33 @@
+
+{{title: PHP сортировка многомерного массива}}
+{{h1: ~ }}
+{{meta: Для сортировки многомерого массива в PHP используется функция array_multisort. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		В PHP для сортировки нескольких массивов или многомерных масивов используeтся функцич <a href="/ru/php/manual/array/array_multisort/">array_multisort</a>. Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$arr = [
+ 				[5, 11, 100],
+ 				[1, 2, 3, 1],
+ 				];
+ 				array_multisort($arr[0], SORT_ASC, SORT_STRING,
+ 				$arr[1], SORT_NUMERIC, SORT_DESC);
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<div class="result">
+			[<br>
+			 [5, 11, 100],<br>			 [1, 2, 3, 1],<br>
+			]<br>
+		</div>
+	<-show->
+</div>
+

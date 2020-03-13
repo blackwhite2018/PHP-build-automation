@@ -15,5 +15,6 @@
 
 	replaceOldStandard($path, $files, 'php');
 	replaceRepeatSpaces($path, $files, 'php');
+	removeTrailingPadding($path, $files, 'php');
 	createMenu($path, $files, 'php');
 

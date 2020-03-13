@@ -1,0 +1,30 @@
+
+{{title: Заменить элемент массива PHP}}
+{{h1: ~ }}
+{{meta: Для замены элементов массива используется функция array_replace. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		В PHP для замены элементов массива используется функция <a href="/ru/php/manual/array/array_replace/">array_replace</a>.
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$arr = ['php', 'html', 'css', 'js'];
+				$arr1 = [0 => 'perl', 3 => 'java'];
+				$a = array_replace($arr, $arr1);
+				var_dump($a);
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+php+>
+			['perl', 'html', 'css', 'java']				
+		<-php->
+	<-show->
+</div>
+
