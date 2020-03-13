@@ -10,9 +10,9 @@
                 preg_match($pattern, $content, $matches);
 
                 $block .= 
-"       <a href=\"/ru/$language/faq/$file/\">
-            $matches[title]
-        </a>\n";
+"\t\t<a href=\"/ru/$language/faq/$file/\">
+\t\t\t$matches[title]
+\t\t</a>\n";
             }
         }
 
