@@ -9,8 +9,8 @@
 	<~show~>
 		<+php+>
 			<?php
-				$datetime1 = date_create('2017-02-11');
-				$datetime2 = date_create('2017-02-13');
+				$datetime1 = date_create('2017 - 02 - 11');
+				$datetime2 = date_create('2017 - 02 - 13');
 				$interval = date_diff($datetime1, $datetime2);
 				echo $interval->format('%R%a дней');
 			?>

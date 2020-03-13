@@ -15,6 +15,8 @@
 					'b' => 2,
 					'c' => 3 
 				];
+
+				$test = 12 - 4;
 			?>
 		<-php->
 	<-show->
@@ -29,8 +31,8 @@
 					'b' => 2,
 					'c' => 3
 				];
-				
 				$arr['d'] = 4; // добавим новый элемент в массив
+				
 				var_dump($arr);
 			?>
 		<-php->
@@ -40,7 +42,12 @@
 	</p>
 	<~show~>
 		<+php+>
-			['a' => 1, 'b' => 2, 'c' => 3, 'd' => 4]
+			[
+				'a' => 1,
+				'b' => 2,
+				'c' => 3,
+				'd' => 4
+			]
 		<-php->
 	<-show->
 	
@@ -48,15 +55,19 @@
 	<ul class="ref">
 		<li>
 			урок <br>
-			<a href="/ru/javascript/book/prime/intro/strings/">работа со строками</a>
+			<a href="">1</a>
 		</li>
 		<li>
 			урок <br>
-			<a href="/ru/javascript/faq/js-empty-string/">пустая строка</a>
+			<a href="">2</a>
 		</li>
 		<li>
 			урок <br>
-			<a href="/ru/javascript/faq/cut-string-js/">получить подстроку из строки</a>
+			<a href="">3</a>
+		</li>
+		<li>
+			урок <br>
+			<a href="">4</a>
 		</li>
 	</ul>
 </div>

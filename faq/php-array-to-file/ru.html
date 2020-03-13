@@ -5,14 +5,14 @@
 
 <div class="content">
 	<p>
-		Это одна из вариаций добавления массива в txt файл. Для этого нам нужны функции <a href="/ru/php/manual/fopen/">fopen</a> и <a href="/ru/php/manual/fwrite/">fwrite</a>. Смотрите пример:
+		Это одна из вариаций добавления массива в txt файл. Для этого нам нужны функции <a href="/ru / php / manual / fopen/">fopen</a> и <a href="/ru / php / manual / fwrite/">fwrite</a>. Смотрите пример:
 	</p>
 	<~show~>
 		<+php+>
 			<?php
 				$arr = ['key' => 'val', 'key2' => 'val2', ['key3' => 'val3']];
-				$file = fopen('file.txt','w');
-				fwrite($file,print_r($arr, 1));
+				$file = fopen('file. txt','w');
+				fwrite($file, print_r($arr, 1));
 				fclose($file);
 			?>
 		<-php->

@@ -6,8 +6,8 @@
                 $filename = $path . $file . '/ru.html';
                 $content = file_get_contents($filename);
 
-                $pattern = '/( )\1+/';
-                $replacement = '$1';
+                $pattern = '/([a-zA-Zа-яА-Я\.,])([ \t]+)/u';
+                $replacement = '$1 ';
 
                 $content = preg_replace($pattern, $replacement, $content);
                 file_put_contents($filename, $content);
