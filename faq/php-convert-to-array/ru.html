@@ -1,0 +1,51 @@
+
+{{title: PHP преобразовать в массив}}
+{{h1: ~ }}
+{{meta: Для преобразования строки в массив есть функция str_split. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Для разбиения строки в массив по заданному разделителю используется функция <a href="/ru/php/manual/string/explode/">explode</a>. 
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$str = 'ab-cd-e';
+				$arr = explode('-', $str);
+				var_dump($arr);
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+php+>
+			['ab', 'cd', 'e']	
+		<-php->
+	<-show->
+	
+	<p>
+		Для преобразования строки в массив используется 
+		функция <a href="/ru/php/manual/string/str_split/">str_split</a>. Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$str = 'abcde';
+				$arr = str_split($str, 2);
+				var_dump($arr);
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+php+>
+			['ab', 'cd', 'e']	
+		<-php->
+	<-show->
+</div>
+

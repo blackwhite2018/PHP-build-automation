@@ -1,0 +1,29 @@
+
+{{title: PHP перевернуть массив}}
+{{h1: ~ }}
+{{meta: Перевернуть массив на PHP вы можете с помощью функции array_reverse. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		<strong>Перевернуть массив</strong> на PHP вы можете с помощью функции 
+		<a href="/ru/php/manual/array/array_reverse/">array_reverse</a>. Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$arr = [1, 2, 3, 4, 5];
+				$arr = array_reverse($arr);
+				var_dump($arr);
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+php+>
+			[5, 4, 3, 2, 1]				
+		<-php->
+	<-show->
+</div>
+

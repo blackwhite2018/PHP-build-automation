@@ -1,0 +1,22 @@
+
+{{title: Функция mail PHP}}
+{{h1: ~ }}
+{{meta: Для отправления письма на электронную почту в PHP есть функция mail. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Функция mail автоматически отправляет сообщение получателю. Можно специфицировать несколько получателей, разделив запятой адреса. Смотрите пример:
+	</p>
+	<show>
+		<+php+>
+			<?php
+				$to = 'nobody@example.com';
+				$subject = 'the subject';
+				$message = 'hello';
+				$headers = 'From: webmaster@example.com\r\n'; 
+				mail($to, $subject, $message, $headers);
+			?>
+		<-php->
+	</show>
+</div>
+

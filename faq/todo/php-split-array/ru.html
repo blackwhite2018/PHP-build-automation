@@ -1,0 +1,28 @@
+
+{{title: PHP разбить массив}}
+{{h1: ~ }}
+{{meta: Для того, чтобы разбить массив в PHP используется функция array_chunk. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Для того, чтобы разбить массив в PHP используется функция <a href="/ru/php/manual/array/array_chunk/">array_chunk</a>. 
+		Смотрите пример:
+	</p>
+	<show>
+		<+php+>
+			<?php
+				$arr = [a, b, c, d];
+				var_dump(array_chunk($arr, 2));
+			?>
+		<-php->
+	</show>
+	<p>
+		Результат выполнения кода:
+	</p>
+	<show>
+		<+php+>
+			[[a, b], [c, d]]
+		<-php->
+	</show>
+</div>
+

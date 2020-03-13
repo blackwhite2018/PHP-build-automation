@@ -1,0 +1,35 @@
+
+{{title: PHP массивы mysql}}
+{{h1: ~ }}
+{{meta: Для работы с данными полученных из БД используют массивы. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Для работы с данными полученных с БД используют функцию <a href="/ru/php/manual/array/mysql_fetch_assoc/">mysql_fetch_assoc</a>. Смотрите пример:
+	</p>
+	<show>
+		<+php+>
+			<?php
+				$conn = mysql_connect('localhost', 'mysql_user', 'mysql_password');
+				$sql = 'SELECT * FROM workers WHERE status= 1';
+				$result = mysql_query($sql);
+				while ($row = mysqli_fetch_assoc($result)) {
+					echo $row['id'];
+					echo $row['name'];
+					echo $row['age'];
+				}; 
+			?>
+		<-php->
+	</show>
+	<p>
+		Результат выполнения кода:
+	</p>
+	<show>
+		<div class="result">
+			1<br>
+			Вася<br>
+                26<br>
+		</div>
+	</show>
+</div>
+

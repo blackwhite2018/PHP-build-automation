@@ -1,0 +1,27 @@
+
+{{title: PHP удалить символы из строки}}
+{{h1: ~ }}
+{{meta: Для удаления символов в PHP есть функция strip_tags. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Функция <a href="/ru/php/manual/string/strip_tags/">strip_tags</a> удаляет HTML теги из строки (не трогая их содержимого).
+		Смотрите пример:
+	</p>
+	<show>
+		<+php+>
+			<?php
+				echo strip_tags('hello <b>world</b>');
+			?>
+		<-php->
+	</show>
+	<p>
+		Результат выполнения кода:
+	</p>
+	<show>
+		<+php+>
+			'hello world'			
+		<-php->
+	</show>
+</div>
+

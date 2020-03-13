@@ -1,0 +1,30 @@
+
+{{title: PHP объединение массивов}}
+{{h1: ~ }}
+{{meta: Для объединения массивов в PHP используется функция array_merge. Нажмите, чтобы посмотреть подробности и примеры работы.}}
+
+<div class="content">
+	<p>
+		Для объединения массивов в PHP используется функцию <a href="/ru/php/manual/array/array_merge/">array_merge</a>. 
+		Смотрите пример:
+	</p>
+	<~show~>
+		<+php+>
+			<?php
+				$arr1 = [1, 2, 3];
+				$arr2 = ['a', 'b', 'c'];
+				$arr = array_merge($arr1, $arr2)
+				var_dump($arr);
+			?>
+		<-php->
+	<-show->
+	<p>
+		Результат выполнения кода:
+	</p>
+	<~show~>
+		<+php+>
+			[1, 2, 3, 'a', 'b', 'c']	
+		<-php->
+	<-show->
+</div>
+
